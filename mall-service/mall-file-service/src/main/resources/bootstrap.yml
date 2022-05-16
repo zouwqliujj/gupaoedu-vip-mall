@@ -1,0 +1,27 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: mall-file
+  cloud:
+    nacos:
+      config:
+        file-extension: yaml
+        server-addr: 192.168.1.15:8848
+      discovery:
+        #Nacos的注册地址
+        server-addr: 192.168.1.15:8848
+fdfs:
+  so-timeout: 1501
+  connect-timeout: 601
+  thumb-image: # 缩略图
+    width: 60
+    height: 60
+  tracker-list: # tracker地址
+    192.168.1.17:22122
+  #url: http://localhost:8082/file/download/
+fileUrl: group1/M00/00/00/wKgBEWJn3EuAT9n3AAE38Mt7drg492.jpg
+#日志配置
+logging:
+  pattern:
+    console: "%msg%n"
